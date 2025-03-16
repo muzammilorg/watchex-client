@@ -1,0 +1,30 @@
+@import '../../theme.scss';
+
+
+
+.ticket_button {
+    width: 90px;
+    height: 40px;
+    padding: 6px;
+    background-color: $secondary;
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    transition: ease-in 0.3s;
+
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+
+}
+
+.ticket_button:hover {
+    background-color: $primary;
+    color: $white;
+
+}

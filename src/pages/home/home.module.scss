@@ -1,0 +1,250 @@
+@import '../../theme.scss';
+
+
+
+.home{
+
+    width: 100%;
+    height: 100vh;
+    background-color: $footerDark;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    --bs-gutter-x: 0;
+
+}
+
+
+.home_showtime_container {
+    width: 100%;
+    height: 90vh;
+    padding: 40px;
+    background-color: $darkGray;
+    color: $white;
+
+    .now_showing {
+        width: 100%;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        span {
+        
+            a{
+                font-size: 14px;
+                font-weight: 500;
+                color: $lightGray;  
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .card_container {
+        width: 100%;
+        height: 65vh;
+        padding: 14px;
+    }
+}
+
+
+.meal_container {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    --bs-gutter-x: 0;
+    background-color: $darkGray;
+
+    img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+    }
+
+    .meal_content {
+        position: relative;
+        text-align: center;
+        z-index: 3;
+        width: 100%;
+        height: 70vh;
+        color: $white;
+
+
+        .meal_button {
+            padding: 8px;
+            background-color: transparent;
+            outline: none;
+            color: $white;
+            font-size: 14px;
+            font-weight: 500;
+            border: 2px solid $white;
+            border-radius: 24px;
+        }
+
+        .meal_button:hover {
+            background-color: $secondary;
+            border: 2px solid $secondary;
+            transition: ease-in 0.2s;
+        }
+
+    }
+}
+
+.our_theater_container {
+    width: 100%;
+    height: 90vh;
+    background-color: $darkGray;
+
+    .theater_heading {
+
+        width: 90%;
+        color: $white;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+    }
+
+    .theater_video {
+        iframe {
+            width: 80%;
+            height: 75vh;
+        }
+    }
+
+}
+
+.about_container {
+    width: 100%;
+    height: 80vh;
+    background-color: $secondary;
+    position: relative;
+
+    img {
+
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+    }
+
+
+    .about_content {
+        padding: 5%;
+        position: absolute;
+        z-index: 3;
+
+
+        p {
+            margin-top: 40px;
+            color: $white;
+
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        img {
+            position: absolute;
+            width: 200px;
+            object-fit: contain;
+            z-index: 3;
+            top: 100px;
+        }
+
+    }
+
+}
+
+
+.findus_container{
+    width: 100%;
+    height: 90vh;
+    background-color: $darkGray;
+    --bs-gutter-x: 0 !important;
+
+
+
+    .findus_content{ 
+        color: $white;
+
+        font-size: 22px;
+
+        .findus_heading{
+            margin-block-start: 0;
+            margin-block-end: 0;
+
+        }
+    
+        .phone{
+            font-size: 22px;
+
+            p{
+
+                font-weight: 500;
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+
+
+    .findus_map{
+    }
+
+    .location_button{
+        width: 120px;
+        font-size: 16px;
+        padding: 8px;
+        color: $white;
+        font-weight: 500;
+        border: 2px solid $white;
+        background-color: transparent;
+        border-radius: 26px;
+        
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+        
+    }
+
+    
+    .location_button:hover{
+        background-color: $secondary;
+        border: 2px solid $secondary;
+        transition: ease-in 0.2s;
+
+    }
+
+}
+   

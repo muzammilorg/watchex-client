@@ -1,0 +1,128 @@
+@import '../../theme.scss';
+
+
+.app_navbar {
+    width: 100%;
+    position: absolute;
+
+
+
+
+    .logo_img {
+        width: 140px;
+    }
+
+
+
+
+    .navlink_item {
+        color: $lightGray2 !important;
+        font-weight: 400;
+
+    }
+
+    .navlink_item:hover {
+        color: $white !important;
+
+        font-weight: 500;
+    }
+
+
+    .global_search_container {
+        width: 220px;
+        height: 40px;
+        border-radius: 16px;
+        background-color: $moderateGray;
+
+        .search_input {
+            background-color: transparent !important;
+            border: none;
+            outline: none;
+            font-size: 13px;
+            color: $lightGray2;
+            font-weight: 500;
+
+        }
+
+        .search_icon {
+            font-size: 24px;
+            color: $lightGray2;
+            cursor: pointer;
+        }
+    }
+
+    .sign_in_button {
+        width: 100px;
+        height: 40px;
+        font-weight: 500;
+        border: 2px solid $white;
+        border-radius: 26px;
+
+        .sign_in_content {
+            color: $white !important;
+            font-weight: 500;
+        }
+
+
+    }
+
+    .sign_in_button:hover {
+        background-color: $primary;
+        border: 2px solid $primary;
+
+        .sign_in_content {
+            color: $white !important;
+
+        }
+    }
+
+    .sign_out_button {
+        width: 100px;
+        height: 40px;
+        font-weight: 500;
+        background-color: transparent;
+        border: 2px solid $white;
+        border-radius: 26px;
+
+        .sign_out_content {
+            color: $white !important;
+            font-weight: 500;
+        }
+
+
+    }
+
+    .sign_out_button:hover {
+        background-color: red;
+        border: none;
+
+        .sign_out_content {
+            color: $white !important;
+
+
+        }
+    }
+
+    .shopping_cart {
+        width: 50px;
+        height: 50px;
+
+        i {
+            font-size: 40px;
+        }
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    .app_navbar {
+
+        .nav_container {
+            border: 2px solid $secondary;
+            padding: 10px;
+            border-radius: 16px;
+            background-color: $darkGray;
+        }
+    }
+}

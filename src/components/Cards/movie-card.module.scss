@@ -1,0 +1,350 @@
+@import '../../theme.scss';
+
+
+.movie_card {
+    width: 240px;
+    height: 380px;
+    background-color: $darkGray2;
+    border-radius: 12px;
+    padding: 16px;
+
+
+    figure img {
+        width: 100%;
+        height: 210px;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .movie_title {
+        width: 100%;
+        height: 40px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+    }
+
+    .upcoming_movie_title {
+        width: 100%;
+        height: 40px;
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+    }
+
+    .show_details {
+        width: 100%;
+
+        p {
+            font-size: 12px;
+            color: $lightGray;
+            font-weight: 500;
+        }
+    }
+
+    .card_rating_section {
+        color: $rating;
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+    }
+
+    .card_upcoming_bottom {
+        position: relative;
+
+        p {
+            position: absolute;
+            bottom: -70px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+
+}
+
+.movie_card:hover {
+    padding: 15px;
+
+    transition: smooth 0.5s;
+    border: 1px solid $mint;
+}
+
+.show_card {
+    margin: 20px 0px;
+    width: 80%;
+    height: 55vh;
+    background-color: $darkGray2;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .show_card_left {
+        width: 28%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 14px;
+        }
+    }
+
+    .show_card_right {
+        width: 72%;
+        height: 100%;
+        padding: 0px 40px;
+
+        h3 {
+            color: $white;
+            font-size: 24px;
+
+        }
+
+        ul {
+            margin-top: 10%;
+            padding-left: 14px;
+
+            li {
+                font-size: 14px;
+                font-weight: 600;
+                color: $lightGray;
+            }
+        }
+
+        h4 {
+            margin-top: 10%;
+            font-size: 18px;
+            color: $lightGray;
+        }
+
+        .show_card_buttons {
+            margin-top: 4%;
+        }
+    }
+}
+
+.show_card:hover {
+    padding: 15px;
+
+    transition: smooth 0.5s;
+    border: 1px solid $mint;
+}
+
+
+@media (max-width: 714px) {
+    .show_card {
+        height: auto;
+        flex-direction: column;
+
+        .show_card_left {
+            width: 100%;
+        }
+
+        .show_card_right {
+            margin-top: 10px;
+            width: 100%;
+            padding: 0px;
+
+            h4 {
+                margin-top: 10%;
+                font-size: 18px;
+                color: $lightGray;
+            }
+    
+            .show_card_buttons {
+                margin-top: 10%;
+            }
+
+
+        }
+
+    }
+}
+
+
+.single_show_card{
+    margin-top: 10px;
+    width: 80%;
+    height: 100px;
+    padding: 0px 10px;
+border-radius: 16px;
+    background-color: $footerDark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .show_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+    img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 12px;
+    }
+
+    .show_details{
+        margin-left: 8px;
+
+        h3{
+            color: $white;
+            font-size: 15px;
+            line-height: 15px;
+        }
+
+        p{
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 6px;
+            color: $lightGray;
+        }
+        
+    }
+    }
+
+    .booking_amount{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 16px;
+            font-weight: 600;
+            color: $secondary;
+        }
+    }
+}
+
+
+.order_card{
+    width: 32%;
+    height: 90vh;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .order_details{
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+
+        .movie_content{
+            width: 100%;
+            height: 130px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: start;
+
+            img{
+                width: 100px;
+                height: 120px;
+                border-radius: 12px;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;                object-fit: cover;
+                object-position: top;
+            }
+
+            .movie_details{
+                margin-top: 5px;
+                margin-left: 15px;
+
+                p{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $darkGray;
+                }
+            }
+        }
+    
+        .show_details{
+            width: 100%;
+            height: 50vh;
+            
+            margin-top: 10px;
+            padding: 10px;
+
+            p{
+                font-size: 14px;
+                color: $darkGray;
+                font-weight: 500;
+            }
+
+            .ticket_id{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .barcode_container{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+    }
+
+    .button_container{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .print_button{
+            width: 100px;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            border-radius: 24px;
+            background-color: $secondary;
+            color: $white;
+        }
+        .print_button:hover{
+            transition: ease-in 0.2s;
+            background-color: $primary;
+        }
+    }
+       
+    }
+
+    
+}

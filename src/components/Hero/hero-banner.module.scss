@@ -1,0 +1,163 @@
+@import '../../theme.scss';
+
+
+.banner_container {
+    width: 40%;
+    height: 100vh;
+    position: relative;
+
+    img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: top;
+        opacity: 0.6;
+        position: absolute;
+        // z-index: -2;
+    }
+
+    .banner_content {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border: 2px solid $primary;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 14px;
+        background-color: rgba($secondary, 0.68);
+        position: absolute;
+        bottom: 16%;
+        left: 17%;
+        color: $white;
+
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .content_desc {
+            gap: 5px;
+            color: $white;
+
+            p {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 0px 5px;
+                border-right: 2px solid;
+                line-height: 18px;
+            }
+
+            p:last-child {
+                border-right: none;
+
+            }
+        }
+
+        .plot {
+            color: $white;
+            font-weight: 600;
+        }
+
+        .actors {
+            color: $white;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        .banner_button_section {
+            gap: 10px;
+            
+
+            
+
+            .watch_trailer {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                color: $white;
+
+                font-weight: 500;
+            }
+
+        }
+
+    }
+}
+
+// Medium Devices or Tabs
+
+@media screen and (max-width: 992px) {
+    .banner_content{
+        width: 70%;
+        min-height: 60vh !important;   
+     }
+}
+
+// Note devices 
+@media screen and (max-width: 610px) {
+    .banner_content{
+        width: 70%;
+        height: 45vh !important; 
+        
+        .content_desc{
+            p{
+
+                font-size: 12px !important;
+                line-height: 14px;
+
+            }
+        }
+     }
+     .banner_button_section{
+        width: 100%;
+        flex-direction: column !important;
+        align-items: start;
+        .watch_trailer{
+            margin-top: 10px;
+        }
+     }
+}
+
+// mobile devices
+
+@media screen and (max-width: 498px) {
+
+    .banner_container {
+        width: 70%;
+    .banner_content{
+        width: 85% !important;
+        height: 40vh !important; 
+
+        h2{
+            font-size: 32px !important;
+        }
+        .plot{
+            font-size: 10px !important;
+        } 
+    }
+
+
+}
+}
+
+// small screen mobile devices
+
+@media screen and (max-width: 390px) {
+
+    .banner_container {
+        width: 75%;
+    .banner_content{
+        width: 95% !important;
+        height: 55vh !important;
+        h2{
+            font-size: 32px !important;
+        }
+        .plot{
+            font-size: 10px !important;
+        } 
+    }
+
+
+}
+}

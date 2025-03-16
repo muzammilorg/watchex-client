@@ -1,0 +1,34 @@
+@import './theme.scss';
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bs-gutter-x: 0 !important;
+  --swiper-pagination-bullet-size: 0px;
+  --swiper-pagination-bullet-width: 0px;
+  --swiper-pagination-bullet-height: 0px;
+}
+
+.navbar-toggler{
+  color: #6f3094 !important;
+  border: 2px solid !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+
+.swiper-slide .myButton {
+  pointer-events: auto !important;
+  z-index: 10; /* Ensure the button is on top of other Swiper elements */
+}
+
+.banner_slider{
+  .swiper-pagination{
+    display: none !important;
+
+  }
+}
+

@@ -1,0 +1,346 @@
+@import '../../theme.scss';
+
+
+.show_container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    background-color: $darkGray;
+    display: flex;
+
+    .left {
+        width: 50%;
+        height: 100%;
+        padding: 1vw 2vw;
+        position: relative;
+
+        .movie_details {
+            width: 100%;
+            height: 45vh;
+            display: flex;
+            gap: 3vw;
+
+            .movie_poster {
+                width: 40%;
+                height: 90%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                    border-radius: 8px;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                }
+            }
+
+            .movie_content {
+                width: 45%;
+                height: 100%;
+                padding-top: 1vh;
+
+                h3 {
+                    color: $white;
+                    font-size: 18px;
+
+                }
+
+
+                .movie_tags {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    p {
+                        color: $lightGray;
+                        font-weight: 500;
+                        font-size: 14px;
+                        margin-bottom: 0rem;
+
+                    }
+                }
+            }
+
+            p {
+                color: $white;
+                font-weight: 500;
+                font-size: 12px;
+            }
+
+            .cinema {
+
+                margin-top: 2vw;
+
+                span {
+                    color: $lightGray;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                h4 {
+                    color: $white;
+                    font-size: 18px;
+                }
+            }
+
+
+        }
+
+        .movie_options {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                color: $white;
+                font-size: 1.2vw;
+                margin-bottom: 1rem;
+
+            }
+
+            .showon {
+                width: 100%;
+                height: 4vw;
+                border-radius: 8px;
+                background-color: $primary;
+
+
+                p {
+                    color: $white;
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+            }
+
+            .selected_seats_container {
+                margin-top: 0.5vw;
+                width: 100%;
+                height: 4vw;
+                padding: 0vw 2vw;
+                border-radius: 8px;
+                background-color: $darkGray2;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .selected_seats {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+
+                    .selected_single_seat {
+                        width: 2vw;
+                        height: 2vw;
+                        padding: 0.4vw;
+                        margin-right: 35px;
+                        gap: 2vw;
+                        border-radius: 4px;
+                        border: 2px solid $mint;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(135, 253, 253, 0.3) 0px 30px 60px -30px, rgba(185, 12, 219, 0.35) 0px -2px 6px 0px inset;
+                        font-size: 12px;
+                        color: $white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                }
+
+                p {
+                    color: $white;
+                    margin-bottom: 0px;
+                    font-size: 14px;
+                    font-weight: 500;
+
+
+
+                }
+            }
+
+            .payment_options {
+                margin-top: 1vw;
+                width: 100%;
+                height: 4vw;
+                padding: 0 2vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    color: $white;
+                    font-size: 28px;
+                    font-weight: 500;
+                    margin-bottom: 0px;
+                }
+
+                button {
+                    padding: 1vw 2vw;
+                    outline: none;
+                    border: none;
+                    background-color: $secondary;
+                    border-radius: 8px;
+                    color: $white;
+                    font-weight: 500;
+                     a{
+                        text-decoration: none;
+                        color: $white;
+                     }
+                }
+
+                button:hover {
+                    transition: ease-in 0.2s;
+
+                    background-color: $primary;
+
+
+
+                }
+
+            }
+
+        }
+
+
+
+
+
+    }
+
+    .right {
+        width: 50%;
+        height: 100%;
+        padding: 2vw 4vw;
+
+        .cinema_map_container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+            .screen_container {
+                perspective: 1000px;
+
+                .screen {
+                    margin-bottom: 2vw;
+                    width: 30vw;
+                    height: 4vw;
+                    transform: rotateX(-45deg);
+                    background-color: $white;
+                    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+
+                }
+
+            }
+
+            .seat_row {
+
+                width: 80%;
+                height: 4vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .row_label {
+                    display: none;
+                }
+
+                .seats_container {
+                    gap: 0.5vw;
+
+                    display: flex;
+
+                    .seat {
+                        width: 2vw;
+                        height: 2vw;
+                        padding: 0.4vw;
+                        gap: 2vw;
+                        border-radius: 4px;
+                        background-color: $lightMint;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            margin-bottom: 0;
+                            font-size: 11px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .seat:hover {
+                        background-color: $secondary;
+                    }
+
+
+
+                    .reserved {
+                        background-color: $primary;
+                        color: $white;
+                    }
+
+
+
+                }
+            }
+
+
+            .seat_guide {
+                width: 100%;
+                height: 4vw;
+                padding: 0% 15%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+
+                .seat_guide_container {
+                    width: 30%;
+                    height: 30px;
+                    font-size: 16px;
+                    color: $white;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    .selected_seat_guide {
+                        width: 2vw;
+                        height: 2vw;
+                        border-radius: 4px;
+
+                        border: 2px solid $mint;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(172, 6, 194, 0.3) 0px 30px 60px -30px, rgba(172, 8, 158, 0.35) 0px -2px 6px 0px inset;
+                        font-size: 12px;
+                        color: $white;
+                    }
+
+                    .available_seat_guide {
+                        width: 2vw;
+                        height: 2vw;
+                        border-radius: 4px;
+                        background-color: $lightMint;
+
+                    }
+
+                    .reserved_seat_guide {
+                        width: 2vw;
+                        height: 2vw;
+                        border-radius: 4px;
+                        background-color: $primary;
+
+                    }
+                }
+
+            }
+
+        }
+    }
+}
