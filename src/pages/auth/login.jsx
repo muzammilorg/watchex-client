@@ -104,6 +104,7 @@ const Login = () => {
                 </button>
 
                 <div className={`${styles.to_navigate}`}>
+                            <p>Try email: johndoe@gmail.com and password: Test123@</p>
                 <p>If you don't have an account <NavLink to={'/sign-up'}>Sign up</NavLink></p>
 
                 </div>
